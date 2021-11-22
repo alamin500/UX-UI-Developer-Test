@@ -25,10 +25,11 @@
     <!-- header start -->
     <header class="nav-style">
       <ul>
+        <li><a class="nav-start" href="#">Start a Company</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contact">Pricing</a></li>
+        <li><a href="#news">Services</a></li>
         <li><a class="active" href="#home">Home</a></li>
-        <li><a href="#news">News</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="#about">About</a></li>
       </ul>
     </header>
 
@@ -39,12 +40,12 @@
         <div class="hero-section">
           <div>
             <h3 style="color: blue">Claim a Free Quote</h3>
-            <h1>
-              <strong>
+            <h1 class="title">
+
                 Get started on fulfilling <br />
                 your Dubai or UAE <br />
                 dream
-              </strong>
+
             </h1>
             <p style="color: blue">UAE & Offshore Company</p>
             <p>
@@ -65,7 +66,8 @@
       </section>
       <!-- Dedicated to Our Mission -->
       <section class="dedicated-mission">
-        <p style="color: blue">
+        <div style="width: 30%;">
+         <p style="color: blue">
           Watch the video about UAE or Offshore Company Registration
           <img
             style="padding: 5px; border: 2px solid blue; border-radius: 50%"
@@ -79,11 +81,12 @@
           to our mission we are
         </h1>
         <p>
-          Our services include Company Formation & Renewals, <br />
-          Trust & Fiduciary, Tax Residency Setup With Family, Bank <br />
-          Accounts, Remote Management, Stock Trading <br />
+          Our services include Company Formation & Renewals,
+          Trust & Fiduciary, Tax Residency Setup With Family, Bank
+          Accounts, Remote Management, Stock Trading
           Platforms, Ownership Solutions.
         </p>
+        </div>
       </section>
       <br />
       <!-- Different Companies -->
@@ -122,9 +125,9 @@
         </div>
       </section>
       <!-- About Our Services  -->
-      <section>
-        <div class="our-services">
-          <div>
+      <section class="our-services">
+        <div>
+           <div>
             <h3>
               Learn the ways in which you can benefit <br />
               from a UAE/Offshore Company. <br />
@@ -132,28 +135,6 @@
             </h3>
             <a href="">Claim a Free Quote</a>
           </div>
-          <div class="services-card">
-            <div class="service-img">
-              <img src="./Assets/Group.png" alt="" />
-            </div>
-
-            <div class="services-text">
-              <h3>Advice & Guidance</h3>
-              <p>
-                All activities in the UAE are licensed. <br />
-                Whether manufacturing, finance, <br />
-                trading, marketing, consultancy or <br />
-                restaurants. In some countries only <br />
-                manufacturing is licensed. In others <br />
-                there is a threshold below which <br />
-                business are encouraged. Get our <br />
-                insightfull guidance today.
-              </p>
-              <a href="">Learn More</a> <img src="./Assets/Vector.png" alt="" />
-            </div>
-          </div>
-        </div>
-        <div class="our-services">
           <div class="services-card">
             <div class="service-img">
               <img src="./Assets/ILLUSTRATION 03  1.png" alt="" />
@@ -193,7 +174,26 @@
             </div>
           </div>
         </div>
-        <div class="our-services">
+        <div>
+          <div class="services-card">
+            <div class="service-img">
+              <img src="./Assets/Group.png" alt="" />
+            </div>
+            <div class="services-text">
+              <h3>Advice & Guidance</h3>
+              <p>
+                All activities in the UAE are licensed. <br />
+                Whether manufacturing, finance, <br />
+                trading, marketing, consultancy or <br />
+                restaurants. In some countries only <br />
+                manufacturing is licensed. In others <br />
+                there is a threshold below which <br />
+                business are encouraged. Get our <br />
+                insightfull guidance today.
+              </p>
+              <a href="">Learn More</a> <img src="./Assets/Vector.png" alt="" />
+            </div>
+          </div>
           <div class="services-card">
             <div class="service-img">
               <img src="./Assets/Group-1.png" alt="" />
@@ -254,9 +254,9 @@
               <li><p>Seal Charges</p></li>
               <li><p>Certificate of Good Standing</p></li>
             </ul>
-            <button style="width: 100%; padding: 15px">Continue</button>
+            <button style="width: 100%; padding: 15px; color: #525ded; background-color: white;">Continue</button>
           </div>
-          <div class="affordable-card">
+          <div class="affordable-card-blue">
             <h3>PAK ICC</h3>
             <h1>$2,997 <small> One time Payment</small></h1>
             <h5>
@@ -277,7 +277,7 @@
               <li><p>Seal Charges</p></li>
               <li><p>Certificate of Good Standing</p></li>
             </ul>
-            <button style="width: 100%; padding: 15px">Continue</button>
+            <button style="width: 100%; padding: 15px; color: #525ded; background-color: white;">Continue</button>
           </div>
           <div class="affordable-card">
             <h3>SHARJAH MEDIA CITY</h3>
@@ -300,7 +300,7 @@
               <li><p>Seal Charges</p></li>
               <li><p>Certificate of Good Standing</p></li>
             </ul>
-            <button style="width: 100%; padding: 15px">Continue</button>
+            <button style="width: 100%; padding: 15px; color: #525ded; background-color: white;">Continue</button>
           </div>
         </div>
       </section>
@@ -309,54 +309,38 @@
         <br />
         <!-- Our Blogs  -->
         <div class="our-blogs">
-          <div>
-            <h3>
-              Read about our blogs for more <br />
-              information on our processes
-            </h3>
+          <div class="blogs-card">
+            <h3>Read about our blogs for more information on our processes</h3>
             <div class="single-blog">
               <img src="./Assets/Vector-4.png" alt="" />
               <div>
-                <p>
-                  How to start a company <br />
-                  formation in Dubai
-                </p>
+                <p>How to start a company formation in Dubai</p>
                 <a href="">5 Minutes</a>
               </div>
             </div>
             <div class="single-blog">
               <img src="./Assets/Vector-4.png" alt="" />
               <div>
-                <p>
-                  How to start an Offshore <br />
-                  company formation in Dubai
-                </p>
+                <p>How to start an Offshore company formation in Dubai</p>
                 <a href="">5 Minutes</a>
               </div>
             </div>
             <div class="single-blog">
               <img src="./Assets/Vector-4.png" alt="" />
               <div>
-                <p>
-                  SEO Dubai: Who benefits <br />
-                  the most?
-                </p>
+                <p>SEO Dubai: Who benefits the most?</p>
                 <a href="">5 Minutes</a>
               </div>
             </div>
             <!-- Happy Customes  -->
             <div>
-              <h3>
-                Satidfied We are When Our <br />
-                Customers Are Happy
-              </h3>
+              <h3>Satidfied We are When Our Customers Are Happy</h3>
               <div class="single-blog">
                 <img src="./Assets/Vector-3.png" alt="" />
                 <div>
                   <p>
-                    "I am very happy with them. I’ll <br />
-                    continue to use their services in <br />
-                    future & highly recommend them to anyone, "
+                    "I am very happy with them. I’ll continue to use their
+                    services in future & highly recommend them to anyone, "
                   </p>
                   <p><strong>Muhib Abrar</strong></p>
                 </div>
@@ -366,9 +350,8 @@
               <img src="./Assets/Vector-3.png" alt="" />
               <div>
                 <p>
-                  "Rama has a high level of integrity, <br />
-                  intellect, knowledge of his <br />
-                  business, resourcefulness and humanity, "
+                  "Rama has a high level of integrity, intellect, knowledge of
+                  his business, resourcefulness and humanity, "
                 </p>
                 <p><strong>Colin Saldahna</strong></p>
               </div>
@@ -377,20 +360,16 @@
               <img src="./Assets/Vector-3.png" alt="" />
               <div>
                 <p>
-                  "Your advise was so complete that I <br />
-                  actually realized how beneficial <br />
-                  this would be to my clients and my busines, "
+                  "Your advise was so complete that I actually realized how
+                  beneficial this would be to my clients and my busines, "
                 </p>
                 <p><strong>Mark Swann</strong></p>
               </div>
             </div>
           </div>
           <!-- Know us  -->
-          <div>
-            <h3>
-              Get to know the whole us and <br />
-              more of our services
-            </h3>
+          <div class="blogs-card">
+            <h3>Get to know the whole us and more of our services</h3>
             <div>
               <h4>Services</h4>
               <ul>
@@ -436,13 +415,12 @@
             <div>
               <h4>Subscribe Now</h4>
               <p>
-                Sunbscribe now to receive our <br />
-                Newsletters about amazing <br />
+                Sunbscribe now to receive our Newsletters about amazing
                 opportunities in Dubai
               </p>
-              <input type="text" placeholder="Enter email address" />
+              <input style="padding: 20px;" type="text" placeholder="Enter email address" />
               <button>
-                <img class="social-icon" src="/Assets/Group 34.png" alt="" />
+                <img ;" class="social-icon" src="/Assets/Group 34.png" alt="" />
               </button>
             </div>
             <!-- Icons -->

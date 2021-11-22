@@ -21,8 +21,11 @@
 .nav-style li a:hover {
   background-color: rgb(194, 191, 191);
 }
-
-
+.nav-start{
+ background-color: #525ded;
+ color: white;
+ border-radius: 5px;
+}
 
 /* Hero Section  */
 .hero-section {
@@ -35,6 +38,8 @@
 }
 .hero-input input{
  padding: 15px;
+ color: #525ded;
+
 }
 .hero-section h1 {
   font-family: 900px;
@@ -42,7 +47,7 @@
 }
 .start-btn {
   padding: 16px;
-  background-color: blue;
+  background-color: #525ded;
   color: white;
   border: 0;
   border-radius: 5px 0 0 5px;
@@ -51,14 +56,45 @@
 .renew-btn {
   padding: 15px;
   background-color: white;
-  color: blue;
-  border: 1px solid blue;
+  color: #525ded;
+  border: 1px solid #525ded;
   border-radius: 0 5px 5px 0;
   margin-left: 0;
 }
+.title{
+ position: relative;
+
+}
+.title::after{
+content: url(../Assets/Ellipse\ 14.png);
+position: absolute;
+height: 8px;
+width: 280px;
+top: 55px;
+background-color: yellow;
+left: 0;
+
+}
+@media only screen and (max-width: 600px) {
+ .hero-section{
+  display: contents;
+ }
+ .hero-section img{
+  width: 100%;
+  height: 220px;
+ }
+}
+@media only screen and (max-width: 992px) {
+.hero-section{
+ display: contents;
+}
+}
 /* Dedicated Mission */
 .dedicated-mission {
+  display: flex;
+  justify-content: center;
   text-align: center;
+
 }
 /* Different Companies  */
 .differnt-companies {
@@ -69,14 +105,18 @@
 .companies-card {
   padding: 60px;
 }
+@media only screen and (max-width: 600px) {
+.differnt-companies{
+ display: contents;
+}
+}
 /* Our services  */
 .our-services {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 .services-card {
   border: 1px solid gray;
-  width: 25%;
   transition: 0.3s;
   margin: 20px;
   border-radius: 5px;
@@ -94,6 +134,11 @@
 .service-img img {
   height: 150px;
 }
+@media only screen and (max-width: 600px) {
+ .our-services{
+  display: contents;
+ }
+}
 /* Popular affordable pricing */
 .affordable-pricing {
   display: grid;
@@ -105,23 +150,46 @@
 .affordable-card{
  padding: 30px;
 }
+.affordable-card-blue{
+ padding: 30px;
+ background-color: #525ded;
+ color: white;
+}
+@media only screen and (max-width: 600px) {
+ .affordable-pricing{
+  display: contents;
+ }
+}
 /* Our blogs, happy customer & more services  */
 .our-blogs {
   display: flex;
   justify-content: space-around;
 }
+.blogs-card{
+ width: 19%;
+}
 .single-blog{
  display: flex;
+ align-items: center;
 }
 .single-blog img{
  height: 30px;
  width: 30px;
- border: 1px solid blue;
- padding: 20px;
+ border: 1px solid #525ded;
+ padding: 10px;
+ margin-top: 10px;
+}
+@media only screen and (max-width: 600px) {
+ .our-blogs{
+  display: contents;
+ }
+ .blogs-card{
+  width: 100%;
+ }
 }
 .social-icon{
- height: 20px;
- width: 20px;
+ height: 60px;
+ width: 60px;
 }
 h1,
 h4,
@@ -134,4 +202,7 @@ a,
 p,
 button {
   font-family: 'Noto Sans', sans-serif;
+}
+a{
+ text-decoration: none;
 }
