@@ -38,6 +38,14 @@ h1 {
   font-size: 62px;
   font-weight: 900;
 }
+@media only screen and (max-width: 767px) {
+  h1 {
+    line-height: 44px;
+  color: #333333;
+  font-size: 36px;
+  font-weight: 600;
+  }
+}
 h2 {
   font-weight: 600;
   font-size: 40px;
@@ -86,6 +94,11 @@ h2::after {
   right: 0;
   margin: 0 auto;
 }
+@media only screen and (max-width: 767px) {
+  h2::after{
+    display: none;
+  }
+}
 /* -------------------Header -------------------- */
 header {
   display: flex;
@@ -102,10 +115,32 @@ header {
   display: flex;
   align-items: center;
 }
+.menu-icon{
+display: none;
+}
+@media only screen and (max-width: 767px) {
+.nav-style ul {
+  display: none;
+}
+.menu-icon{
+display: block;
+}
+.responsive{
+  position: relative;
+}
+.responsive ul{
+  display: block;
+   position: absolute;
+    left: 0;
+    z-index: 10;
+    top: 70px;
+    right: 0;
+    background-color: #fff;
+}
+}
 
 .nav-style li {
 }
-
 .nav-style li a {
   display: block;
   color: black;
@@ -130,7 +165,7 @@ header {
   padding: 50px 30px 0;
   max-width: 1640px;
   margin: 0 auto;
-  justify-content: space-between;
+  justify-content: center;
   position: relative;
 }
 .hero-section::after {
@@ -171,6 +206,12 @@ header {
   letter-spacing: 1.5px;
   font-size: 24px;
 }
+@media only screen and (max-width: 767px) {
+  .company-details {
+    line-height: 20px;
+    font-size: 16px;
+  }
+}
 .hero-input-wrapper {
 }
 .hero-input {
@@ -178,11 +219,18 @@ header {
   display: flex;
   align-items: center;
   margin-left: auto;
-  border: 1px solid #525ded;
+  border: 3px solid #525ded;
   width: 350px;
+  border-radius: 5px;
   padding: 5px 10px;
+      max-width: 1640px;
+    margin: 0 120px 0 auto;
 }
-
+@media only screen and (max-width: 767px) {
+  .hero-input {
+    width: 200px;
+  }
+}
 .hero-input input {
   padding: 15px;
 
@@ -247,13 +295,22 @@ input:focus-visible {
   right: 0;
   margin: 0 auto;
 }
+.dedicated-mission::after {
+  content: url(../Assets/Ellipse\ 17-1.png);
+  position: absolute;
+  width: 17px;
+    top: 106px;
+    left: -1624px;
+  right: 0;
+  margin: 0 auto;
+}
 .mission-content {
   max-width: 800px;
   margin: 0 auto;
 }
 @media only screen and (max-width: 767px) {
   .dedicated-mission {
-    padding: 80px;
+    padding: 10px;
   }
 }
 .video-title {
@@ -285,6 +342,7 @@ input:focus-visible {
 }
 @media only screen and (max-width: 767px) {
   .differnt-companies {
+    padding: 15px;
     display: block;
     text-align: center;
   }
@@ -344,10 +402,8 @@ input:focus-visible {
   }
   .services-right-content {
     max-width: 500px;
+    margin-top: 10px;
   }
-}
-.services-left-content > div:last-child {
-  margin-top: 140px;
 }
 .services-details {
   margin-bottom: 140px;
@@ -372,7 +428,53 @@ input:focus-visible {
   }
 }
 .mt-top {
-  margin-top: 140px;
+  margin-top: 240px;
+  position: relative;
+}
+.mt-top::before {
+  content: url(../Assets/Ellipse\ 23.png);
+  position: absolute;
+  width: 17px;
+    top: -199px;
+    left: 227px;
+    right: -59px;
+  margin: 0 auto;
+}
+.mt-top::after {
+  content: url(../Assets/Ellipse\ 24.png);
+  position: absolute;
+  width: 17px;
+    top: -139px;
+    left: -600px;
+    right: 211px;
+  margin: 0 auto;
+}
+.mt-top-left {
+  margin-top: 240px;
+  position: relative;
+}
+.mt-top-left::before {
+  content: url(../Assets/Ellipse\ 12.png);
+  position: absolute;
+  width: 17px;
+    top: -181px;
+    left: -150px;
+    right: -59px;
+  margin: 0 auto;
+}
+.mt-top-left::after {
+  content: url(../Assets/Ellipse\ 14.png);
+  position: absolute;
+  width: 17px;
+     top: 339px;
+    left: 595px;
+    right: -59px;
+  margin: 0 auto;
+}
+@media only screen and (max-width: 767px) {
+  .mt-top-left::after {
+    display:none;
+  }
 }
 .services-card:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
@@ -380,15 +482,30 @@ input:focus-visible {
 .services-text {
   padding: 0px 60px 60px;
 }
+@media only screen and (max-width: 767px) {
+  .services-text {
+    padding: 10px;
+  }
+}
 .service-img {
   text-align: center;
   padding: 40px 40px 0 40px;
+}
+@media only screen and (max-width: 767px) {
+  .service-img {
+    padding: 10px;
+  }
 }
 .service-img img {
   height: 255px;
 }
 .more-services {
   margin-top: 100px;
+}
+@media only screen and (max-width: 767px) {
+  .more-services {
+    margin: 10px;
+  }
 }
 .learn-more {
   margin-top: 15px;
@@ -405,6 +522,11 @@ input:focus-visible {
 .price-section {
   margin-top: 140px;
 }
+@media only screen and (max-width: 767px) {
+  .price-section {
+    margin: 10px;
+  }
+}
 .affordable-pricing {
   display: grid;
   justify-content: center;
@@ -419,7 +541,7 @@ input:focus-visible {
 
 @media only screen and (max-width: 767px) {
   .pricing-title {
-    padding: 30px;
+    padding: 10px;
   }
 }
 .pricing-title:after {
@@ -428,7 +550,7 @@ input:focus-visible {
 }
 @media only screen and (max-width: 767px) {
   .pricing-title:after {
-    max-width: 300px;
+    display: none;
   }
 }
 .price {
@@ -469,6 +591,11 @@ input:focus-visible {
   padding: 30px;
   position: relative;
 }
+@media only screen and (max-width: 767px) {
+  .affordable-card {
+    padding: 5px;
+  }
+}
 .affordable-card-boll {
   position: relative;
 }
@@ -507,6 +634,11 @@ input:focus-visible {
   background-color: #525ded;
   color: white;
   border-radius: 15px;
+}
+@media only screen and (max-width: 767px) {
+  .affordable-card-blue {
+    padding: 10px;
+  }
 }
 .affordable-card-blue h3 {
   font-size: 44px;
@@ -565,6 +697,11 @@ input:focus-visible {
   margin: 0 auto;
   padding: 100px 50px;
 }
+@media only screen and (max-width: 767px) {
+  .our-blogs-section {
+    padding: 10px;
+  }
+}
 .our-blogs {
   display: flex;
   justify-content: space-between;
@@ -591,13 +728,18 @@ input:focus-visible {
   position: relative;
 }
 .blogs-card-right::after {
-  content: url(../Assets/Group\ 100.png);
+  content: url(../Assets/Group\ 100-1.png);
   position: absolute;
   width: 17px;
   top: -296px;
   left: 241px;
   right: 0;
   margin: 0 auto;
+}
+@media only screen and (max-width: 767px) {
+  .blogs-card-right::after{
+    display: none;
+  }
 }
 .blogs-card-right::before {
   content: url(../Assets/Ellipse\ 21.png);
@@ -743,11 +885,7 @@ input:focus-visible {
   width: 400px;
   margin-bottom: 40px;
 }
-@media only screen and (max-width: 767px) {
-  .subscribe-input {
-    flex-wrap: wrap;
-  }
-}
+
 .subscribe-input input {
   border: 0;
   height: 40px;
@@ -755,6 +893,12 @@ input:focus-visible {
   background-color: #f5f5f5;
   color: #adadad;
   font-size: 26px;
+}
+@media only screen and (max-width: 767px) {
+  .subscribe-input input{
+    flex-wrap: wrap;
+    width: 200px;
+  }
 }
 .subscribe-input input::placeholder {
   color: #adadad;
@@ -781,4 +925,12 @@ input:focus-visible {
   align-items: center;
   list-style: none;
   padding-left: 0;
+}
+@media only screen and (max-width: 767px) {
+  .icons {
+    justify-content: center;
+  }
+}
+.footer{
+  text-align: center;
 }

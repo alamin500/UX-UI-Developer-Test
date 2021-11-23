@@ -21,7 +21,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width">
   <!-- header start -->
-  <header class="nav-style">
+  <header class="nav-style" id="myTopnav">
     <div>
       <img src="./Assets/Group 114.png" alt="">
     </div>
@@ -32,12 +32,17 @@
       <li><a href="#about">About Us</a></li>
       <li><a class="nav-start" href="#">Start a Company</a></li>
     </ul>
+    <div onclick="myFunction()" class="menu-icon"><img height="50px" src="./Assets/nav.png" alt=""></div>
   </header>
 
   <!-- main  -->
   <main>
     <!-- hero section  -->
     <section>
+      <div class="hero-input">
+            <div class="icon">&#128269;</div>
+            <input type="text" placeholder="Search a Term | Topic" />
+          </div>
       <div class="hero-section">
         <div class="left-side-content">
           <h3>Claim a Free Quote</h3>
@@ -58,11 +63,8 @@
           <button class="renew-btn">Renew a Company</button>
         </div>
         <div class="hero-input-wrapper">
-          <div class="hero-input">
-            <div class="icon">&#128269;</div>
-            <input type="text" placeholder="Search a Term | Topic" />
-          </div>
-          <img height="550px" src="./Assets/ILLUSTRATION.png" alt="" />
+
+          <img height="600px" src="./Assets/ILLUSTRATION.png" alt="" />
         </div>
       </div>
     </section>
@@ -152,7 +154,7 @@
             <a href="" class="learn-more">Learn More <img src="./Assets/Vector.png" alt="" /></a>
           </div>
         </div>
-        <div class="services-card">
+        <div class="services-card mt-top-left">
           <div class="service-img">
             <img src="./Assets/Group-2.png" alt="" />
           </div>
@@ -546,14 +548,26 @@
               </li>
               <li>
                 <img class="social-icon" src="/Assets/Vector-7.png" alt="" />
-
               </li>
             </ul>
           </div>
         </div>
       </div>
+      <div class="footer">
+        <p> Varaluae 2021 C All Right Reserved</p>
+      </div>
     </section>
   </main>
+  <script>
+  function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "nav-style") {
+    x.className += " responsive";
+  } else {
+    x.className = "nav-style";
+  }
+}
+</script>
 </body>
 
 </html>
