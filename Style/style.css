@@ -6,9 +6,8 @@ body {
   color: #adadad;
   -webkit-text-size-adjust: none;
   -ms-text-size-adjust: none;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+  width: 100%;
+  width: 100%;
 }
 h1,
 h4,
@@ -41,9 +40,9 @@ h1 {
 @media only screen and (max-width: 767px) {
   h1 {
     line-height: 44px;
-  color: #333333;
-  font-size: 36px;
-  font-weight: 600;
+    color: #333333;
+    font-size: 36px;
+    font-weight: 600;
   }
 }
 h2 {
@@ -94,9 +93,13 @@ h2::after {
   right: 0;
   margin: 0 auto;
 }
+
 @media only screen and (max-width: 767px) {
-  h2::after{
-    display: none;
+  h2::after {
+    content: unset;
+  }
+  main {
+    overflow: hidden;
   }
 }
 /* -------------------Header -------------------- */
@@ -105,6 +108,11 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 15px 130px;
+}
+@media only screen and (max-width: 767px) {
+  header {
+    padding: 15px 20px;
+  }
 }
 .nav-style ul {
   list-style-type: none;
@@ -115,28 +123,28 @@ header {
   display: flex;
   align-items: center;
 }
-.menu-icon{
-display: none;
-}
-@media only screen and (max-width: 767px) {
-.nav-style ul {
+.menu-icon {
   display: none;
 }
-.menu-icon{
-display: block;
-}
-.responsive{
-  position: relative;
-}
-.responsive ul{
-  display: block;
-   position: absolute;
+@media only screen and (max-width: 767px) {
+  .nav-style ul {
+    display: none;
+  }
+  .menu-icon {
+    display: block;
+  }
+  .responsive {
+    position: relative;
+  }
+  .responsive ul {
+    display: block;
+    position: absolute;
     left: 0;
     z-index: 10;
     top: 70px;
     right: 0;
     background-color: #fff;
-}
+  }
 }
 
 .nav-style li {
@@ -158,7 +166,7 @@ display: block;
   border-radius: 5px;
 }
 
-/*----------- Hero Section ----------- */
+/*------------- Hero Section ----------- */
 .hero-section {
   display: flex;
   align-items: center;
@@ -200,6 +208,12 @@ display: block;
 .left-side-content {
   padding-top: 50px;
 }
+@media only screen and (max-width: 767px) {
+  .left-side-content {
+    padding-top: 5px;
+    text-align: center;
+  }
+}
 .company-details {
   font-weight: 600;
   line-height: 36px;
@@ -223,12 +237,13 @@ display: block;
   width: 350px;
   border-radius: 5px;
   padding: 5px 10px;
-      max-width: 1640px;
-    margin: 0 120px 0 auto;
+  max-width: 1640px;
+  margin: 0 120px 0 auto;
 }
 @media only screen and (max-width: 767px) {
   .hero-input {
     width: 200px;
+    margin: 0 auto 0 auto;
   }
 }
 .hero-input input {
@@ -278,8 +293,13 @@ input:focus-visible {
   background-color: #ffa500;
   left: 0;
 }
+@media only screen and (max-width: 767px) {
+  .title::after {
+    content: unset;
+  }
+}
 
-/* Dedicated Mission */
+/*------------------ Dedicated Mission -------------------*/
 
 .dedicated-mission {
   text-align: center;
@@ -290,8 +310,8 @@ input:focus-visible {
   content: url(../Assets/Ellipse\ 23.png);
   position: absolute;
   width: 17px;
-    top: 106px;
-    left: -629px;
+  top: 106px;
+  left: -629px;
   right: 0;
   margin: 0 auto;
 }
@@ -299,8 +319,8 @@ input:focus-visible {
   content: url(../Assets/Ellipse\ 17-1.png);
   position: absolute;
   width: 17px;
-    top: 106px;
-    left: -1624px;
+  top: 106px;
+  left: -1624px;
   right: 0;
   margin: 0 auto;
 }
@@ -334,7 +354,7 @@ input:focus-visible {
   }
 }
 
-/* Different Companies  */
+/* ---------------------Different Companies --------------------- */
 .differnt-companies {
   display: flex;
   align-items: center;
@@ -377,7 +397,7 @@ input:focus-visible {
   font-size: 26px;
 }
 
-/* Our services  */
+/*----------------Our services-------------------- */
 .our-services {
   display: flex;
   justify-content: space-between;
@@ -403,6 +423,14 @@ input:focus-visible {
   .services-right-content {
     max-width: 500px;
     margin-top: 10px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .services-left-content {
+    margin: 10px auto;
+  }
+  .services-right-content {
+    margin: 10px auto;
   }
 }
 .services-details {
@@ -435,18 +463,18 @@ input:focus-visible {
   content: url(../Assets/Ellipse\ 23.png);
   position: absolute;
   width: 17px;
-    top: -199px;
-    left: 227px;
-    right: -59px;
+  top: -199px;
+  left: 227px;
+  right: -59px;
   margin: 0 auto;
 }
 .mt-top::after {
   content: url(../Assets/Ellipse\ 24.png);
   position: absolute;
   width: 17px;
-    top: -139px;
-    left: -600px;
-    right: 211px;
+  top: -139px;
+  left: -600px;
+  right: 211px;
   margin: 0 auto;
 }
 .mt-top-left {
@@ -457,23 +485,23 @@ input:focus-visible {
   content: url(../Assets/Ellipse\ 12.png);
   position: absolute;
   width: 17px;
-    top: -181px;
-    left: -150px;
-    right: -59px;
+  top: -181px;
+  left: -150px;
+  right: -59px;
   margin: 0 auto;
 }
 .mt-top-left::after {
   content: url(../Assets/Ellipse\ 14.png);
   position: absolute;
   width: 17px;
-     top: 339px;
-    left: 595px;
-    right: -59px;
+  top: 339px;
+  left: 595px;
+  right: -59px;
   margin: 0 auto;
 }
 @media only screen and (max-width: 767px) {
   .mt-top-left::after {
-    display:none;
+    display: none;
   }
 }
 .services-card:hover {
@@ -490,6 +518,7 @@ input:focus-visible {
 .service-img {
   text-align: center;
   padding: 40px 40px 0 40px;
+  overflow: hidden;
 }
 @media only screen and (max-width: 767px) {
   .service-img {
@@ -518,7 +547,7 @@ input:focus-visible {
   margin-left: 13px;
 }
 
-/* Popular affordable pricing */
+/*---------------------- Popular affordable pricing--------------------- */
 .price-section {
   margin-top: 140px;
 }
@@ -691,7 +720,7 @@ input:focus-visible {
     display: block;
   }
 }
-/* Our blogs, happy customer & more services  */
+/* ---------------------Our blogs, happy customer & more services ----------------------- */
 .our-blogs-section {
   max-width: 1640px;
   margin: 0 auto;
@@ -737,7 +766,7 @@ input:focus-visible {
   margin: 0 auto;
 }
 @media only screen and (max-width: 767px) {
-  .blogs-card-right::after{
+  .blogs-card-right::after {
     display: none;
   }
 }
@@ -826,6 +855,11 @@ input:focus-visible {
 .with-radius > div {
   margin-left: 30px;
 }
+@media only screen and (max-width: 767px) {
+  .with-radius > div {
+    margin-left: 0px;
+  }
+}
 .with-radius p {
   color: #000000;
   font-size: 26px;
@@ -895,8 +929,11 @@ input:focus-visible {
   font-size: 26px;
 }
 @media only screen and (max-width: 767px) {
-  .subscribe-input input{
+  .subscribe-input input {
     flex-wrap: wrap;
+    width: 200px;
+  }
+  .subscribe-input {
     width: 200px;
   }
 }
@@ -931,6 +968,6 @@ input:focus-visible {
     justify-content: center;
   }
 }
-.footer{
+.footer {
   text-align: center;
 }
